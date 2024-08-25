@@ -6,13 +6,26 @@
     <title>
       password protected!!
     </title>
+
+    <script type="text/javascript">
+		function checkpassword() {
+			var password = document.getElementById("passwordbox");
+			var passwordText = password.value;
+			if(passwordText== "1414"){
+				return true;
+				}
+			else{
+				alert("womp womp")
+				return false;
+				}
+			}
     
   </head>
   
   <body>
     
-    <h1>
-      hallo
+    <h1 class="locked">
+      enter the password to proceed
     </h1>
     
   </body>
